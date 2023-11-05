@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wizardry Wishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> </head>
+<body>
+    <div id="myNav" class="overlay container">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+                            <a onclick="closeNav()">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+    <div class="search" id="search">
+        <div class="search-content">
+            <input type="text" placeholder="Search here.." name="search">
+            <a class="pull-right" onclick="closeSearch()">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right navbar-header">
+                    <li>
+                        <a onclick="openNav()">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" hamb">
+                <button data-toggle="collapse" data-target="#navres">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <div id="navres" class="collapse">
+        <ul class="nav nav-stacked">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="products.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row short-row">
+            <div >
+                <div style="display: flex;">
+                <div class="Products">
+                    <div><img src="images/p1.jpg" width="350" height="300"> </div>
+                    <p>Sorting Hat-a sentient magical hat of Witchcraft and Wizardry.Determines the best-suited Hogwarts house for each student</p>
+                </div>
+                <div class="Products">
+                    <div><img src="images/p2.jpg" width="350" height="300"> </div>
+                    <p>Wands are powerful magical tools in the wizarding world, channeling a wizard or witch's abilities and enabling them to cast spells with precision.</p>
+                </div>
+                </div>
+                <div style="display: flex;">
+                <div class="Products">
+                    <div><img src="images/p3.jpg" width="350" height="300"> </div>
+                    <p>Wizard clothing consists of mystical robes and attire adorned with enchanted symbols, worn by practitioners of magic to embrace magical identity.</p>
+                </div>
+                <div class="Products">
+                    <div><img src="images/p4.jpg" width="350" height="300"> </div>
+                    <p>Dormitories in the wizarding world are enchanted living spaces at magical schools like Hogwarts, providing a cozy and communal residence for students during their studies.</p>
+                </div>
+                </div>
+                <div style="display: flex;">
+                    <div class="Products">
+                        <div><img src="images/p5.jpg" width="350" height="300"> </div>
+                        <p>Magic books are ancient tomes filled with spells and arcane knowledge, serving as essential references for wizards in pursuit of magical prowess.</p>
+                    </div>
+                    <div class="Products">
+                        <div><img src="images/p6.jpg" width="350" height="300"> </div>
+                        <p>Wizardry stickers are enchanting, adhesive designs that bring a touch of magic to any surface, perfect for adding a mystical flair to your belongings or surroundings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wizardry Wishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+</head>
+<body>
+    <div id="myNav" class="overlay container">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+                            <a onclick="closeNav()">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+                            <a onclick="openNav()">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" hamb">
+                    <button data-toggle="collapse" data-target="#navres">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="navres" class="collapse">
+            <ul class="nav nav-stacked">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </div>
+        <div class="image">
+            <p> Welcome to our website Wizardry Wishes. We are making as many efforts as possible to make your experience better. Stay and navigate for more information..
+            </p>
+        </div>
+        <div class="wrap">
+            <div class="container">
+                <div class="row short-row">
+                    <div class="arow">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="pic pic1"></div>
+                            <span>About</span>
+                            <p>Find interesting! Then check below...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="arow">
+                            <div class="pic pic2"></div>
+
+                            <span>Contact</span>
+                            <p>Find interesting! Then check below....</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                        <div class="arow">
+                            <div class="pic pic3"></div>
+                            <span>Our Products</span>
+                            <p>Find interesting! Then check below...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row short-row short1">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <span>ABOUT PAGE</span>
+                    <p>At WizardryCraft Store, we're passionate about all things magical and mystical. We've conjured a haven for wizards, witches, and fantasy enthusiasts to discover the finest enchanted artifacts, spellbinding potions, and powerful wands. Our team of skilled artisans and spellcasters handcraft each item with a touch of wonder and a sprinkle of enchantment. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <span>CONTACT PAGE</span>
+                    <p>We're here to assist you on your magical quest and answer any questions you may have. Whether you're seeking advice on the right wand, need assistance with an order, or simply wish to share your mystical experiences, our team of mystical advisors is at your service.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <span>PRODUCTS</span>
+                    <p>Explore a captivating array of mystical treasures and enchanted essentials that are carefully crafted to ignite your imagination and embrace the arcane. From powerful wands and bewitching potions to spell books and rare artifacts, our catalog holds the keys to unlocking the secrets of the arcane world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

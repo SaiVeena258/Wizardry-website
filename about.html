@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wizardry Wishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+</head>
+<body>
+    <div id="myNav" class="overlay container">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+                            <a onclick="closeNav()">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Wizardry Wishes</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right navbar-header">
+                    <li>
+                        <a onclick="openNav()">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" hamb">
+                <button data-toggle="collapse" data-target="#navres">
+
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div id="navres" class="collapse">
+        <ul class="nav nav-stacked">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="about img pic3">
+        <p>About</p>
+    </div>
+    <div class="container">
+        <div class="row short-row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <p>At Wizardry Wishes Store, we're more than just a mystical marketplace; we're the guardians of a world where enchantment knows no bounds.Our mission is simple yet profound: to provide access to the finest and most enchanting artifacts, spellbinding potions, and powerful wands that will awaken the wizard within you. Each item in our collection has been meticulously handcrafted, designed to spark the embers of wonder, and imbued with a touch of magic that you'll feel from the moment you lay your eyes upon them.</p>
+                <span>WE TOGETHER</span>
+                <p>We take immense pride in our commitment to quality, authenticity, and craftsmanship. Our team of skilled artisans and sorcery experts combines time-honored techniques with a deep understanding of the mystical arts to create items that are not just products but true artifacts of power and beauty.But it's not just about the merchandise; it's about the journey. Our brand is built on the belief that wizardry is not just a hobby or a fantasy; it's a way of life. It's a commitment to endless exploration, to unlocking the secrets of the arcane, and to letting your inner wizard shine. We invite you to explore our vast and captivating catalog, each item brimming with the potential for adventure and magic.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span>OUR PROMISE</span>
+                <p>Our promise is to be more than just a store; we're your fellow travelers on this magical odyssey. We're here to assist you, inspire you, and celebrate your journey through the enchanting world of wizardry. So, whether you're seeking your first wand, a rare potion, or simply looking to share in the wonder of the arcane, we're your steadfast companions on this remarkable adventure. Welcome to a world where the ordinary fades, and the extraordinary comes to life</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
